@@ -1,1 +1,17 @@
-rootProject.name = "ExampleMod"
+buildscript {
+    repositories {
+        maven {
+            name "JitPack"
+            url "https://jitpack.io"
+        }
+
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        classpath "org.codeberg.CRModders:cosmic-loom:69aad95d4f983e8d5cb20599c822865e16b2a0ba"
+    }
+}
+
+rootProject.name = "CosmicAchievements"
